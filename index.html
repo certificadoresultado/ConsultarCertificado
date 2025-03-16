@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando...</title>
+    <style>
+        body {
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+            padding-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Valide el certificado del curso aqui:</h3>
+        <h4>Mayerli Guerrero Delgado C.C 1004997949</h4>
+    <h1 id="loading" style="padding-top: 10%;">Cargando</h1>
+    <script>
+        let dots = "";
+        setInterval(() => {
+            dots = dots.length < 3 ? dots + "." : "";
+            document.getElementById("loading").textContent = "Cargando" + dots;
+        }, 500);
+    </script>
+</body>
+</html>
